@@ -1,0 +1,2 @@
+var outStr = "i come first. " + "i come second.";
+var myStr = "this is the start. " + "this is the end";
