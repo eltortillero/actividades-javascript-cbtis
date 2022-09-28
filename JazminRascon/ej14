@@ -1,0 +1,7 @@
+var ourStr = "I come first.";
+ourStr += "I come second.";
+
+var myStr = "This is te first sentence."
+myStr += "This is the second sentence"
+
+console.log(myStr);

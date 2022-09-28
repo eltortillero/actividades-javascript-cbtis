@@ -1,0 +1,8 @@
+function ourReusablefuction() {
+    console.log("Jazmin, hola");
+}
+ourReusablefuction();
+ourReusablefuction();
+ourReusablefuction();
+
+// Jazmin, hola
