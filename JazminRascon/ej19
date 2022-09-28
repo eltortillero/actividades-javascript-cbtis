@@ -1,0 +1,6 @@
+var firstName = "Ada";
+var secondLetterOfFirstName = firstName[1];
+
+var lasName = "LoveLace";
+
+var thirdLetterOfLastName = lastName[2];
