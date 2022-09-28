@@ -1,0 +1,12 @@
+var firstLetterOfFirstName = "";
+var firstName = "Ada";
+
+firstLetterOfFirstName = firstName[0];
+
+var firstLetterOfFirstName = "";
+var lastName = "LoveLace";
+
+firstLetterOfLastName = lastName[0];
+console.log(firstLetterOfLastName)
+
+// mostrará la letra "L" por ser la primera letra del apellido
