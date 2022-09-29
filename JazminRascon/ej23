@@ -1,0 +1,2 @@
+//lista de compras
+var myList = [["cereal", 3], ["Leche", 2], ["platanos", 3], ["jugo", 2], ["huevos", 3]];

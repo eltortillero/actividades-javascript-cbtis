@@ -1,0 +1,7 @@
+var anAdjective = "awesome!";
+var ourStr = "freeCodeCamp is ";
+ourStr += anAdjective;
+
+var someAdjetive = "worthwhile";
+var myStr = "learning to code is";
+myStr += someAdjetive;

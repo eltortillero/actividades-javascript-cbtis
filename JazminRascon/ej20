@@ -1,0 +1,10 @@
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+    var result = "";
+    return result += "The " + myAdjective + "" + myNoun + "" + myVerb + " to the store " + myAdverb
+}
+
+console.log(wordBlanks "dog", "big", "ran", "quickly");
+console.log(wordBlanks("bike", "slow", "flew", "slowly"));
+
+// the big dog ran to the store quickly.
+// The slow bike flew to the store slowly

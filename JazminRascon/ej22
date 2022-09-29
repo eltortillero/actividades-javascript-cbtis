@@ -1,0 +1,9 @@
+var ourArray = [1,2,3];
+var removedFromOurArray = ourArray.pop();
+
+var myArray = [["Jazmin", 12], ["cat", 2]];
+
+var removedFromOurArray = myArray.pop();
+console.log(myArray)
+
+// "Jazmin", 12

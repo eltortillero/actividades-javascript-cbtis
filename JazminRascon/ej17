@@ -1,0 +1,10 @@
+var firstNameLength = 0;
+var firstName = "Ada";
+
+firstNameLength = firstName.length;
+
+var lasNameLength = 0;
+var lasName = "Lovelace";
+
+lasNameLength = lastName.length;
+console.log(lastNameLength)
