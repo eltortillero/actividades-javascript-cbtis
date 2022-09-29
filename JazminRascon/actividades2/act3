@@ -1,0 +1,6 @@
+const saludar = (a,b,c) =>{
+    return a + b + c
+}
+console.log(saludar(1,'Jazmin' , true))
+
+//1Jazmintrue
