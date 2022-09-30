@@ -1,0 +1,9 @@
+function saludar () {
+    console.log('saludo')
+}
+saludar()
+const saludo = () => console.log('Saludar desde Arrow Functions')
+saludo()
+
+// saludo
+// Saludar desde Arrow Functions
