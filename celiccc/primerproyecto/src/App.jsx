@@ -7,6 +7,7 @@ function App() {
     <div className="App">
      <h1> Titulo primer proyecto </h1>
    < contador></contador>
+   < contador></contador>
      <hola></hola>
     </div>
   );
