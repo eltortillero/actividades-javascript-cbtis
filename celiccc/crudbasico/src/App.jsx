@@ -1,10 +1,10 @@
 import React from 'react';
-import Listadonombre from '../componente2/Listadonombres'
+import Listadonombres from '../componente2/Listadonombres'
 
 function App() {
   return (
     <div className="container">
-     <Listadonombre/>
+     <Listadonombres/>
 
      
     </div>
