@@ -6,15 +6,21 @@ const Listadonombres = () => {
     const [listanombres, setListadoNombres] = useState([])
     const [modoEdicion, setModoEdicion] = useState(false)
     const [id, setId] = useState('')
+    const [error, setError] = useState(null)
 
     const addNombre =(e)=>{
         e.preventDefault()
+        if(!nombre.trim()){
+                setError('Favor de llenar el campo de Nombre')
+                return
+        }
         const nuevoNombre = {
             id:uniqid(),
             tituloNombre:nombre
         }
         setListadoNombres([...listanombres, nuevoNombre])
-        setNombre('');       
+        setNombre('');  
+        setError(null)     
     }
     const deleteNombre = (id) => {
         const nuevaArray = listanombres.filter(item => item.id !== id);
@@ -29,6 +35,8 @@ const Listadonombres = () => {
         e.preventDefault()
         const NuevoArray = listanombres.map( item => item.id === id ? {id:id, tituloNombre:nombre}: item)
         setListadoNombres(NuevoArray)
+        setModoEdicion(false)
+        setNombre('')
     }
 
     return(
@@ -63,6 +71,14 @@ const Listadonombres = () => {
                         value={modoEdicion ? 'Editar Nombre':'Registrar nombre'}
                         />
                     </form>
+                    {
+                        error != null ? (
+                            <div className="alert alert-danger">{error}</div>
+                        ):
+                        (
+                            <div></div>
+                        )
+}
                 </div>
             </div>
         </div>
