@@ -75,7 +75,7 @@ const editarNombre = (e) =>{
                         <input onChange={(e)=>{setNombre(e.target.value)}}
                          className="form-control mb-3"
                           type="text"
-                          placeholder="introduce el nombre" 
+                          placeholder="Introduce el nombre" 
                           value={nombre}
                           />
                         <input
