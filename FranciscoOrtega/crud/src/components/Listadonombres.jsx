@@ -75,7 +75,7 @@ const editarNombre = (e) =>{
                         <input onChange={(e)=>{setNombre(e.target.value)}}
                          className="form-control mb-3"
                           type="text"
-                          placeholder="Introduce el nombre" 
+                          placeholder="introduce el nombre" 
                           value={nombre}
                           />
                         <input
@@ -101,4 +101,3 @@ const editarNombre = (e) =>{
 }
 
 export default Listadonombres 
-/* Alfredo Muñoz */
