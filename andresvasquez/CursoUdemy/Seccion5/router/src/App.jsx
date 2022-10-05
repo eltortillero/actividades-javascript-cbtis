@@ -1,8 +1,8 @@
 import React from 'react';
-import Inicio from './components/inicio';
-import Base from './components/Base';
+
 import {
   BrowserRouter as Router,
+  Routes,
   Route,
   Link
 } from 'react-router-dom'
@@ -13,22 +13,19 @@ function App() {
 <Link to ="/inicio">Inicio</Link>
 
 <Link to ="/">Base</Link>
-
+  <Routes>
   <Route exact path="/">
-  <base/>
 </Route>
 
  <Route path="/:nombre">
 
- <Inicio/>
 
  </Route>
-
-
+</Routes>
+ 
 
    </Router>
   );
 }
 
 export default App;
-
