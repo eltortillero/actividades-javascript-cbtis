@@ -1,29 +1,30 @@
-import './App.css';
 import React from 'react';
+
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link,
-}from 'react-router-dom'
-
+  Link
+} from 'react-router-dom'
 
 function App() {
   return (
-<Router>
+   <Router>
+<Link to ="/inicio">Inicio</Link>
 
-<Routes>
+<Link to ="/">Base</Link>
+  <Routes>
+  <Route exact path="/">
+</Route>
 
-  <Route path="/inicio">
-    Estas en el inicio
-  </Route>
-  <Route path="/">
-Esto es la url base
-  </Route>
-  
+ <Route path="/:nombre">
+
+
+ </Route>
 </Routes>
+ 
 
-</Router>
+   </Router>
   );
 }
 
