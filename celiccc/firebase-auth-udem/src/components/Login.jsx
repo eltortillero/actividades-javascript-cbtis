@@ -13,13 +13,11 @@ const RegistrarUsuario= (e) =>{
        auth.createUserWithEmailAndContrasenia (email,contra )
       .then(r => alert('Usuario registrado'))
        
-    .catch (e =>{
-       
-
-      if (e.code == 'auth/invalid-email'){
+    .catch (e =>{ 
+      if (e.code === 'auth/invalid-email'){
         setMsgError('Formato de Email incorrecto')
       }
-      if(e.code == 'auth/weak-password '){
+      if(e.code === 'auth/weak-password '){
         setMsgError('La contraseña debde tener 6 caracteres o mas')
       }
     })
