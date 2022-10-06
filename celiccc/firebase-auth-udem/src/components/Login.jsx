@@ -61,10 +61,10 @@ onClick={LoginUsuario}
                </button>
 
                 {
-                    msgerror != null  ?
+                    msgError != null  ?
                     (
                         <div>
-                            {msgerror}
+                            {msgError}
                         </div>
                     )
                     :
