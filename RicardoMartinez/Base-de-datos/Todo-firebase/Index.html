@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="witdh=device-width, initial-scale=1.0">
+        <title>Todo Firebase</title>
+        <link rel="stylesheet" href="Main.css" />
+    </head>
+    <body>
+        <div id="app">
+            <button id="button-login">Login con Google</button>
+            <button id="button-logout" class="hidden">Cerrar Sesion</button>
+            <form id="todo-form" >
+                <div id="user-info"></div>
+                <input type="text" id="todo-input" placeholder="Nuevo todo..." autocomplete="off"/>
+            </form>
+            <div id="todos-container"></div>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script> 
+        <script src="App.js" type="module">
+            // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+import firebase from "firebase/app";
+import "firebase/auth";
+
+// TODO: Replace the following with your app's Firebase project configuration
+// See: https://firebase.google.com/docs/web/learn-more#config-object
+const firebaseConfig = {
+  // ...
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+
+// Initialize Firebase Authentication and get a reference to the service
+const auth = firebase.auth();
+
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDmYK2ZIoOj3OgZnTPZgIIFj921zwKgWp0",
+  authDomain: "todo-967d6.firebaseapp.com",
+  projectId: "todo-967d6",
+  storageBucket: "todo-967d6.appspot.com",
+  messagingSenderId: "698901112179",
+  appId: "1:698901112179:web:983e274817d6f75fb6d106"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+        </script>
+    </body>
+</html>
